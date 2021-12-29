@@ -1,0 +1,131 @@
+.Auth{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    cursor: default;
+    background: url("../assets/auth/pic2.jpg") center center no-repeat;
+    background-size: cover;
+
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        background: white;
+        border-radius: 20px;
+        padding:20px;
+        padding-right: 28px;
+        box-shadow: rgba(0, 0, 0, 0.103) 0px 0px 20px;
+        letter-spacing:0.6px;
+        left: 50px;
+        gap: 10px;
+        align-items: center;
+
+        img{
+            height:40px;
+        }
+
+        h2{
+            color:rgb(63, 63, 63);
+            font-size:1.5rem;
+        }
+    }
+
+    .auth-box{
+        padding:35px 30px;
+        width:450px;
+        top: 50%;
+        box-shadow: rgba(0, 0, 0, 0.253) 0px 0px 35px;
+        position:absolute;
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        gap:15px;
+        right: 120px;
+        transform:translateY(-50%);
+        background:rgb(255, 255, 255);
+        border-radius:20px;
+
+        h1{
+            font-size:1.8rem;
+            color:rgb(1, 39, 70);
+        }
+
+        .hori{
+            display:flex;
+            gap: 10px;
+        }
+
+        .userpic-input{
+            width:100px;
+            height:100px;
+
+            .userpic{
+                border-radius:50%;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(to right bottom,rgb(35, 35, 36),rgb(1, 1, 48));
+                color: white;
+                font-size:2.5rem;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+            }
+
+        }
+
+        .input-box{
+            display: flex;
+            padding:12px 15px;
+            border:solid 1.4px rgb(179, 179, 179);
+            width:100%;
+            border-radius:10px;
+            gap: 10px;
+
+            input{
+                width: 100%;
+                border: none;
+                color: rgb(59, 57, 57);
+                outline: none;
+                font-size:1.1rem;
+
+                ::placeholder{
+                    color:rgb(224, 224, 224);
+                }
+            }
+
+            img{
+                height: 30px;
+                padding:4px;
+            }
+        }
+
+        button{
+            padding:15px 25px;
+            width:fit-content;
+            border-radius: 8px;
+            margin-bottom:20px;
+            border: none;
+            outline:none;
+            background:linear-gradient(to right bottom,rgb(37, 39, 38),rgb(1, 39, 70));
+            color:white;
+            transition:all cubic-bezier(.12,.07,.05,1.06) 0.2s;
+
+            &:active{
+                transform:scale(0.9);
+            }
+        }
+
+        &>p{
+            text-align:center;
+            font-size:1.1rem;
+
+            span{
+                padding:5px;
+                font-size:1.2rem;
+                cursor:pointer;
+                color: rgb(3, 122, 201);
+                font-weight:bold;
+            }
+        }
+    }
+}
